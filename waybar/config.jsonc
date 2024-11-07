@@ -1,0 +1,92 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": "25",
+    "modules-left": ["hyprland/workspaces","network", "pulseaudio"],
+    "modules-center": ["mpris"],
+    "modules-right": ["battery", "memory", "cpu", "tray", "clock"],
+
+	
+    "hyprland/workspaces":{
+    	"on-click": "activate"
+    
+    },
+
+
+  "mpris": {
+ 	"format": " {status_icon} {dynamic}",
+        "interval": 1,
+        "dynamic-len": 40,
+	"status-icons": {
+		"playing": "▶",
+		"paused": "⏸",
+		"stopped": ""
+	},
+	"dynamic-order": ["title", "artist"]
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+
+    "clock": {
+        "format": "{:%d-%m %I:%M %p}",
+        "interval": 60
+    },
+    "battery": {
+        "format": "{capacity}% {timeToFull}",
+        "format-full": "{capacity}% ",
+        "format-charging": "{capacity}% ",
+        "format-discharging": "{capacity}% ",
+        "interval": 30
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-ethernet": " {ipaddr}",
+        "interval": 60
+    },
+
+     "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{icon} {volume}%", //{format_source}",
+    "format-bluetooth": "{icon} {volume}% 󰂯", //{format_source}",
+    "format-bluetooth-muted": "󰖁 {icon} 󰂯", //{format_source}",
+    "format-muted": "󰖁 {volume}%",
+    // "format-source": " {volume}%",
+    // "format-source-muted": "",
+    "format-icons": {
+      "headphone": "󰋋",
+      "hands-free": "󱡒",
+      "headset": "󰋎",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
+    },
+    "on-click": "pavucontrol",
+  },
+
+    "memory": {
+        "format": " {used}/{total} GB",
+        "interval": 30
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 2
+    },
+    "temperature": {
+        "format": "{temperature}°C",
+        "interval": 5
+    },
+    "backlight": {
+        "format": " {percent}%",
+        "interval": 5
+    },
+    "tray": {
+        "icon-size": 16
+    }
+}
+

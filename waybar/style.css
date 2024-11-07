@@ -1,0 +1,55 @@
+* {
+    font-family: "FreeMono";
+    font-size: 15px;
+    color: #ffffff;
+}
+
+window#waybar{
+
+	background: transparent;
+	margin: 20px;
+
+}
+
+#clock {
+    color: #ffffff;
+    padding-left: 15px
+}
+
+#battery {
+    color: #ffffff;
+    padding-right: 20px;
+}
+
+#network {
+    color: #ffffff;
+    padding-right: 20px;
+}
+
+#memory {
+    color: #ffffff;
+    padding-right: 15px;
+}
+
+#cpu{
+	color: #ffffff;
+
+}
+
+#pulseaudio {
+    color: #ffffff;
+}
+
+#tray{
+    padding-left: 15px;
+}
+
+#custom-cava {
+    color: #8FBC8F;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 6px;
+    font-family: "bargraph";
+    font-size: 22px;
+}
+

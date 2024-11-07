@@ -1,0 +1,73 @@
+
+
+
+
+[window]
+
+padding = {x = 10, y =15}
+dynamic_padding = true
+
+decorations = "Full"
+
+opacity = 0.75
+blur = true
+
+dynamic_title = false
+
+
+[font]
+
+normal = {family = "FreeMono", style = "Bold"}
+bold = {family = "FreeMono", style = "Bold Oblique"}
+size = 12.5
+offset = {x = 1, y = 2}
+
+
+
+# Colors (Alabaster Dark)
+# author tonsky
+
+[colors.primary]
+background = '#000000'
+foreground = '#FFFFFF'
+
+[colors.cursor]
+text = '#0E1415'
+cursor = '#CECECE'
+
+[colors.selection]
+text = "CellForeground"
+background = "#EEEEEE"
+
+[colors.normal]
+black = "#110f18"
+red = "#ff6767"
+green = "#61ffca"
+yellow = "#ffca85"
+blue = "#a277ff"
+magenta = "#a277ff"
+cyan = "#61ffca"
+white = "#edecee"
+
+[colors.bright]
+black = "#4d4d4d"
+red = "#ff6767"
+green = "#61ffca"
+yellow = "#ffca85"
+blue = "#a277ff"
+magenta = "#a277ff"
+cyan = "#61ffca"
+white = "#edecee"
+
+[cursor]
+
+style.shape = "Block"
+style.blinking = "On"
+
+[general]
+import = []
+
+[terminal]
+
+
+shell =  {  program = "/bin/zsh", args = ["-l", ] }
